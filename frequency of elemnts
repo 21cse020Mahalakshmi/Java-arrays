@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int i;
+	   
+	    System.out.println("enter n");
+	    Scanner sc = new Scanner(System.in);
+	    int n =sc.nextInt();
+	    int arr1[]= new int[n];
+	
+	    System.out.println("enter the elements of the array");
+	    for( i=0;i<n;i++){
+	         arr1[i] =sc.nextInt();
+	    }
+	    boolean counted[] = new boolean[n];
+	    
+	    for( i=0;i<arr1.length;i++){
+	        int count =1;
+	        if(!counted[i]){
+	        
+	       for(int j=i+1;j<arr1.length;j++) {
+	           
+	        if(arr1[i] ==arr1[j])
+	        {
+	         count++;
+	         counted[j]=true;
+	        }
+	        
+	       }
+	       System.out.println(arr1[i] + "fre" +count);
+	    }
+	     
+	    }
+	}
+}
