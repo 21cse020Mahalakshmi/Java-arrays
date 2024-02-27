@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int i,largest,smallest;
+	   
+	    System.out.println("enter n");
+	    Scanner sc = new Scanner(System.in);
+	    int n =sc.nextInt();
+	    int arr1[]= new int[n];
+	
+	    System.out.print("enter the elements of the array");
+	    for( i=0;i<n;i++){
+	         arr1[i] =sc.nextInt();
+	    }
+	    largest =arr1[0];
+	    smallest=arr1[0];
+for(i=0;i<n;i++)
+{
+  if(arr1[i]>largest)
+  {
+      largest=arr1[i];
+  }
+}
+for(i=0;i<n;i++)
+{
+  if(arr1[i]<smallest)
+  {
+      smallest=arr1[i];
+  }
+}
+System.out.println("largest" +largest);
+System.out.println("smallest" +smallest);
+	    
+	}
+}
