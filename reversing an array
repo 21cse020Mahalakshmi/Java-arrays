@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int i,j;
+	   
+	    System.out.println("enter n");
+	    Scanner sc = new Scanner(System.in);
+	    int n =sc.nextInt();
+	    int arr1[]= new int[n];
+	
+	    System.out.print("enter the elements of the array");
+	    for( i=0;i<n;i++){
+	         arr1[i] =sc.nextInt();
+	    }
+	    
+ System.out.print(" elements of the array after reverse");
+	    for( i=arr1.length-1;i>=0;i--){
+	       System.out.print(arr1[i]);
+	    }
+
+	    
+	}
+}
