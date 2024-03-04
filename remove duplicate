@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                            Online Java Debugger.
+                Code, Run and Debug Java program online.
+Write your code in this editor and press "Debug" button to debug program.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	System.out.println("enter n");
+	Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	int arr[]=new int[n];
+	System.out.println("enter elt");
+	for(int i=0;i<n;i++)
+	{
+	    arr[i]=sc.nextInt();
+	}
+	int j=0;
+	for(int i=1;i<n;i++){
+	    if(arr[i]!=arr[j]){
+	        j++;
+	        arr[j]=arr[i];
+	    }
+	    
+	    
+	}
+	System.out.print( j+1);
+}
+}
